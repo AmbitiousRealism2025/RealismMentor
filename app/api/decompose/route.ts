@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 // Use CommonJS require instead of ES import
-const googleGenAI = require('@google/genai');
+import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/genai';
 import { z } from 'zod';
 
 const apiKey = process.env.GOOGLE_API_KEY;
@@ -10,7 +10,7 @@ if (!apiKey) {
 }
 
 // Access GoogleGenerativeAI as a property of the required module
-const genAI = new googleGenAI.GoogleGenerativeAI(apiKey);
+const genAI = new GoogleGenerativeAI({ apiKey });
 
 const model = genAI.getGenerativeModel({
   model: 'gemini-1.5-pro-latest',
@@ -54,10 +54,10 @@ JSON Output:`;
 
     // Access HarmCategory and HarmBlockThreshold through the required module object
     const safetySettings = [
-      { category: googleGenAI.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold: googleGenAI.HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE },
-      { category: googleGenAI.HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold: googleGenAI.HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE },
-      { category: googleGenAI.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold: googleGenAI.HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE },
-      { category: googleGenAI.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold: googleGenAI.HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE },
+      { category: HarmCategory.HARM_CATEGORY_HARASSMENT, threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE },
+      { category: HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE },
+      { category: HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE },
+      { category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE },
     ];
 
     console.log('[API /api/decompose] Attempting to call Gemini API...');
