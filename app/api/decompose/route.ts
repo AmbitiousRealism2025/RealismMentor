@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 // Use CommonJS require instead of ES import
-import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/genai';
+const { GoogleGenAI, HarmCategory, HarmBlockThreshold } = require('@google/genai'); // Changed to GoogleGenAI
 import { z } from 'zod';
 
 const apiKey = process.env.GOOGLE_API_KEY;
@@ -10,11 +10,11 @@ if (!apiKey) {
 }
 
 // Access GoogleGenerativeAI as a property of the required module
-const genAI = new GoogleGenerativeAI({ apiKey });
+const genAI = new GoogleGenAI({ apiKey }); // Changed to GoogleGenAI
 
-const model = genAI.getGenerativeModel({
-  model: 'gemini-1.5-pro-latest',
-});
+// const model = genAI.getGenerativeModel({ // Removed this line
+//   model: 'gemini-1.5-pro-latest',
+// });
 
 const WeeklyTasksSchema = z.object({
   weeklyPlan: z.record(z.string(), z.array(z.string()))
@@ -61,7 +61,8 @@ JSON Output:`;
     ];
 
     console.log('[API /api/decompose] Attempting to call Gemini API...');
-    const result = await model.generateContent({
+    const result = await genAI.models.generateContent({ // Corrected: Use genAI.models.generateContent
+      model: 'gemini-1.5-pro-latest', // Model specified directly in the call
       contents: [{ role: "user", parts: [{ text: prompt }] }],
       generationConfig: generationConfig,
       safetySettings: safetySettings,

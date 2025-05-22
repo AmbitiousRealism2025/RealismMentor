@@ -1,0 +1,120 @@
+\n=== Main Page Curl Output (http://localhost:3005/) ===
+HTTP/1.1 200 OK
+Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept-Encoding
+link: </_next/static/media/a34f9d1faa5f3315-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2"
+Cache-Control: no-store, must-revalidate
+X-Powered-By: Next.js
+Content-Type: text/html; charset=utf-8
+Date: Thu, 22 May 2025 20:20:15 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/app/layout.css?v=1747945215143" data-precedence="next_static/css/app/layout.css"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack.js?v=1747945215143"/><script src="/_next/static/chunks/main-app.js?v=1747945215143" async=""></script><script src="/_next/static/chunks/app-pages-internals.js" async=""></script><script src="/_next/static/chunks/app/page.js" async=""></script><title>Realism Mentor</title><meta name="description" content="Decompose goals into actionable tasks."/><meta name="next-size-adjust"/><script src="/_next/static/chunks/polyfills.js" noModule=""></script></head><body class="__className_d65c78"><main class="flex min-h-screen flex-col items-center justify-center p-24"><div class="w-full max-w-md mx-auto bg-white shadow-md rounded-lg p-4 border border-gray-200"><div class="message-display-area h-96 overflow-y-auto space-y-2 mb-4 p-2 bg-gray-50 rounded-md"></div><div class="input-area flex items-center space-x-2"><input type="text" placeholder="Type your goal..." class="flex-grow border rounded-md p-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none" value=""/><button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Submit</button></div></div></main><script src="/_next/static/chunks/webpack.js?v=1747945215143" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:HL[\"/_next/static/media/a34f9d1faa5f3315-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/css/app/layout.css?v=1747945215143\",\"style\"]\n0:D{\"name\":\"r2\",\"env\":\"Server\"}\n"])</script><script>self.__next_f.push([1,"3:I[\"(app-pages-browser)/./node_modules/next/dist/client/components/app-router.js\",[\"app-pages-internals\",\"static/chunks/app-pages-internals.js\"],\"\"]\n6:I[\"(app-pages-browser)/./components/ChatWindow.tsx\",[\"app/page\",\"static/chunks/app/page.js\"],\"default\"]\n8:I[\"(app-pages-browser)/./node_modules/next/dist/client/components/layout-router.js\",[\"app-pages-internals\",\"static/chunks/app-pages-internals.js\"],\"\"]\n9:I[\"(app-pages-browser)/./node_modules/next/dist/client/components/render-from-template-context.js\",[\"app-pages-internals\",\"static/chunks/app-pages-internals.js\"],\"\"]\nd:I[\"(app-pages-browser)/./node_modules/next/dist/client/components/error-boundary.js\",[\"app-pages-internals\",\"static/chunks/app-pages-internals.js\"],\"\"]\n4:D{\"name\":\"\",\"env\":\"Server\"}\n5:D{\"name\":\"HomePage\",\"env\":\"Server\"}\n5:[\"$\",\"main\",null,{\"className\":\"flex min-h-screen flex-col items-center justify-center p-24\",\"children\":[\"$\",\"$L6\",null,{}]}]\n7:D{\"name\":\"RootLayout\",\"env\":\"Server\"}\na:D{\"name\":\"NotFound\",\"env\":\"Server\"}\na:[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"Thi"])</script><script>self.__next_f.push([1,"s page could not be found.\"}]}]]}]}]]\n7:[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__className_d65c78\",\"children\":[\"$\",\"$L8\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$a\",\"notFoundStyles\":[]}]}]}]\nb:D{\"name\":\"rQ\",\"env\":\"Server\"}\nb:null\nc:D{\"name\":\"\",\"env\":\"Server\"}\ne:[]\n0:[\"$\",\"$L3\",null,{\"buildId\":\"development\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"\"],\"initialTree\":[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"__PAGE__\",{},[[\"$L4\",\"$5\",null],null],null]},[[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/app/layout.css?v=1747945215143\",\"precedence\":\"next_static/css/app/layout.css\",\"crossOrigin\":\"$undefined\"}]],\"$7\"],null],null],\"couldBeIntercepted\":false,\"initialHead\":[\"$b\",\"$Lc\"],\"globalErrorComponent\":\"$d\",\"missingSlots\":\"$We\"}]\n"])</script><script>self.__next_f.push([1,"c:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Realism Mentor\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"Decompose goals into actionable tasks.\"}],[\"$\",\"meta\",\"4\",{\"name\":\"next-size-adjust\"}]]\n4:null\n"])</script></body></html>\n=== API Call Curl Output (POST to http://localhost:3005/api/decompose) ===
+HTTP/1.1 500 Internal Server Error
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch
+content-type: application/json
+Date: Thu, 22 May 2025 20:20:24 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+{"error":"Failed to decompose goal","details":"got status: 400 Bad Request. {\"error\":{\"code\":400,\"message\":\"API key not valid. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API key not valid. Please pass a valid API key.\"}]}}"}Server shutdown attempted.
+\n=== Server Logs (/tmp/tmp.T1yVpLpL6k) ===
+
+> realism-mentor@0.1.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+ ⚠ Port 3001 is in use, trying 3002 instead.
+ ⚠ Port 3002 is in use, trying 3003 instead.
+ ⚠ Port 3003 is in use, trying 3004 instead.
+ ⚠ Port 3004 is in use, trying 3005 instead.
+  ▲ Next.js 14.2.28
+  - Local:        http://localhost:3005
+
+ ✓ Starting...
+ ✓ Ready in 3.3s
+ ○ Compiling / ...
+ ✓ Compiled / in 5.6s (511 modules)
+ GET / 200 in 6656ms
+ ✓ Compiled in 1401ms (240 modules)
+ ○ Compiling /api/decompose ...
+ ✓ Compiled /api/decompose in 7.2s (445 modules)
+[API /api/decompose] Received goal for decomposition: Learn to bake a delicious chocolate cake
+[API /api/decompose] Attempting to call Gemini API...
+[API /api/decompose] Full error object in catch block: ClientError: got status: 400 Bad Request. {"error":{"code":400,"message":"API key not valid. Please pass a valid API key.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]}}
+    at throwErrorIfNotOK (webpack-internal:///(rsc)/./node_modules/@google/genai/dist/node/index.mjs:10823:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@google/genai/dist/node/index.mjs:10597:13)
+    at async Models.generateContent (webpack-internal:///(rsc)/./node_modules/@google/genai/dist/node/index.mjs:11762:24)
+    at async POST (webpack-internal:///(rsc)/./app/api/decompose/route.ts:77:24)
+    at async /app/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/app/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/app/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/app/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/app/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/app/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/app/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/app/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/app/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/app/node_modules/next/dist/server/base-server.js:818:17)
+    at async /app/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/app/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/app/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/app/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/app/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/app/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/app/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  [cause]: 'Error\n' +
+    '    at new ClientError (webpack-internal:///(rsc)/./node_modules/@google/genai/dist/node/index.mjs:10335:37)\n' +
+    '    at throwErrorIfNotOK (webpack-internal:///(rsc)/./node_modules/@google/genai/dist/node/index.mjs:10823:33)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async eval (webpack-internal:///(rsc)/./node_modules/@google/genai/dist/node/index.mjs:10597:13)\n' +
+    '    at async Models.generateContent (webpack-internal:///(rsc)/./node_modules/@google/genai/dist/node/index.mjs:11762:24)\n' +
+    '    at async POST (webpack-internal:///(rsc)/./app/api/decompose/route.ts:77:24)\n' +
+    '    at async /app/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228\n' +
+    '    at async eT.execute (/app/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)\n' +
+    '    at async eT.handle (/app/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)\n' +
+    '    at async doRender (/app/node_modules/next/dist/server/base-server.js:1366:42)\n' +
+    '    at async cacheEntry.responseCache.get.routeKind (/app/node_modules/next/dist/server/base-server.js:1588:28)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (/app/node_modules/next/dist/server/base-server.js:1496:28)\n' +
+    '    at async DevServer.renderPageComponent (/app/node_modules/next/dist/server/base-server.js:1924:24)\n' +
+    '    at async DevServer.renderToResponseImpl (/app/node_modules/next/dist/server/base-server.js:1962:32)\n' +
+    '    at async DevServer.pipeImpl (/app/node_modules/next/dist/server/base-server.js:922:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/next/dist/server/next-server.js:272:17)\n' +
+    '    at async DevServer.handleRequestImpl (/app/node_modules/next/dist/server/base-server.js:818:17)\n' +
+    '    at async /app/node_modules/next/dist/server/dev/next-dev-server.js:339:20\n' +
+    '    at async Span.traceAsyncFn (/app/node_modules/next/dist/trace/trace.js:154:20)\n' +
+    '    at async DevServer.handleRequest (/app/node_modules/next/dist/server/dev/next-dev-server.js:336:24)\n' +
+    '    at async invokeRender (/app/node_modules/next/dist/server/lib/router-server.js:178:21)\n' +
+    '    at async handleRequest (/app/node_modules/next/dist/server/lib/router-server.js:355:24)\n' +
+    '    at async requestHandlerImpl (/app/node_modules/next/dist/server/lib/router-server.js:379:13)\n' +
+    '    at async Server.requestListener (/app/node_modules/next/dist/server/lib/start-server.js:141:13)'
+}
+[API /api/decompose] Error stack: ClientError: got status: 400 Bad Request. {"error":{"code":400,"message":"API key not valid. Please pass a valid API key.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]}}
+    at throwErrorIfNotOK (webpack-internal:///(rsc)/./node_modules/@google/genai/dist/node/index.mjs:10823:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@google/genai/dist/node/index.mjs:10597:13)
+    at async Models.generateContent (webpack-internal:///(rsc)/./node_modules/@google/genai/dist/node/index.mjs:11762:24)
+    at async POST (webpack-internal:///(rsc)/./app/api/decompose/route.ts:77:24)
+    at async /app/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/app/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/app/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/app/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/app/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/app/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/app/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/app/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/app/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/app/node_modules/next/dist/server/base-server.js:818:17)
+    at async /app/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/app/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/app/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/app/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/app/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/app/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/app/node_modules/next/dist/server/lib/start-server.js:141:13)
+ POST /api/decompose 500 in 8180ms

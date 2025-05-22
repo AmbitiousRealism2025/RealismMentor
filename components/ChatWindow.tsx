@@ -40,9 +40,31 @@ const ChatWindow: React.FC = () => {
 
       if (response.ok) {
         const data = await response.json();
+        // BEGIN FIX: Process weeklyPlan
+        let formattedTasks = "Weekly Tasks:\n";
+        if (data.weeklyPlan && typeof data.weeklyPlan === 'object' && Object.keys(data.weeklyPlan).length > 0) {
+          for (const [week, tasks] of Object.entries(data.weeklyPlan)) {
+            if (Array.isArray(tasks) && tasks.length > 0) {
+              // Format week string: "week1" -> "Week 1"
+              const weekNumber = week.replace(/^week(\d+)$/i, '$1');
+              const capitalizedWeek = `Week ${weekNumber}`;
+              formattedTasks += `${capitalizedWeek}: ${(tasks as string[]).join(', ')}\n`;
+            }
+          }
+        } else {
+          // Fallback if weeklyPlan is empty or not in expected structure
+          if (Object.keys(data).length === 0 || !data.weeklyPlan) {
+             formattedTasks = "Received an empty plan or could not find tasks in the response.";
+          } else {
+             // If weeklyPlan exists but is empty e.g. {}
+             formattedTasks = "No specific weekly tasks were generated. Try rephrasing your goal or be more specific.";
+          }
+        }
+        // END FIX
+
         const aiResponse: Message = {
-          id: Date.now() + 1, // Ensure unique ID if responses are very fast
-          text: `Tasks: ${data.decomposedTasks.join(', ')}`,
+          id: Date.now() + 1, 
+          text: formattedTasks.trim(), // Use the new formatted string
           sender: 'ai',
         };
         setMessages((prevMessages) => [...prevMessages, aiResponse]);
