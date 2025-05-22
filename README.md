@@ -19,14 +19,27 @@ This project aims to create an AI-powered application to help users decompose fr
     *   Pivoted to using the `@google/genai` SDK directly within `app/api/decompose/route.ts` to simplify integration.
     *   The API route `app/api/decompose/route.ts` is set up to receive a goal, call the Gemini API using `@google/genai`, and validate the response with Zod.
 
-## Current Status & Next Steps
+## MVP Status
 
-The issues with the `/api/decompose` API route have been resolved. The `GOOGLE_API_KEY` is now correctly loaded, and the `GoogleGenerativeAI` import issue has been fixed. The API route can successfully call the Gemini API and return a structured JSON response.
+The MVP is complete. Users can now input a goal into a chat interface and receive a list of decomposed, actionable weekly tasks from the AI.
 
-We can now proceed with the roadmap:
-*   **Task 2: Conversational Chat UI**
-    *   Create `<ChatWindow />` component.
-    *   Hook chat input to `/api/decompose`.
+## Future Enhancements & Next Steps
+
+The core functionality of goal decomposition is in place. Future efforts can focus on improving the user experience and expanding features:
+
+*   Enhanced UI/UX for displaying tasks (e.g., as a checklist, with more formatting).
+*   User accounts and goal history.
+*   Ability to edit, mark as complete, or further decompose individual tasks.
+*   Integration with calendar or to-do list applications.
+*   More sophisticated error handling and user feedback.
+*   Refinements to the prompt used for goal decomposition for better results.
+
+## MVP Task List
+- **User Interface for Goal Input:** Implement a text input field in the `<ChatWindow />` component where users can enter their goals.
+- **Display Decomposed Tasks:** Implement an area in the `<ChatWindow />` component to show the actionable weekly tasks returned by the `/api/decompose` endpoint.
+- **Connect UI to API:** Wire up the `<ChatWindow />` component to send the user's goal to the `/api/decompose` API endpoint and display the response.
+- **Basic Styling and Usability:** Apply essential styling to make the chat interface clear and easy to use.
+- **End-to-End Testing:** Verify the complete flow from goal input to task display, ensuring functionality and error handling.
 
 ## Notes from Previous Troubleshooting
 
