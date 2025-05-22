@@ -19,19 +19,11 @@ This project aims to create an AI-powered application to help users decompose fr
     *   Pivoted to using the `@google/genai` SDK directly within `app/api/decompose/route.ts` to simplify integration.
     *   The API route `app/api/decompose/route.ts` is set up to receive a goal, call the Gemini API using `@google/genai`, and validate the response with Zod.
 
-## Current Status & Next Steps (When Resuming)
+## Current Status & Next Steps
 
-We are currently paused while troubleshooting the `/api/decompose` API route. The immediate issues are:
+The issues with the `/api/decompose` API route have been resolved. The `GOOGLE_API_KEY` is now correctly loaded, and the `GoogleGenerativeAI` import issue has been fixed. The API route can successfully call the Gemini API and return a structured JSON response.
 
-1.  **`Error: GOOGLE_API_KEY is not set in environment variables`**: This indicates that the `GOOGLE_API_KEY` from the `.env.local` file is not being correctly loaded by the Next.js server when the API route is executed.
-    *   **To Do**: Verify `.env.local` file name, location (must be project root), content (`GOOGLE_API_KEY=your_key_value`), and ensure the dev server is fully restarted after any changes to this file.
-
-2.  **`Attempted import error: 'GoogleGenerativeAI' is not exported from '@google/genai'`**: This suggests an issue with how `GoogleGenerativeAI` is being imported or a potential mismatch with the installed SDK version, though it might be a secondary effect of the environment variable issue.
-    *   **To Do (if API key issue is resolved and this persists)**: Double-check the `@google/genai` SDK documentation for the correct import syntax for the installed version. Verify the installed version (`npm list @google/genai`).
-
-Once these issues are resolved, the next step will be to confirm that the `/api/decompose` route can successfully call the Gemini API and return a structured JSON response.
-
-After that, we can proceed with the roadmap:
+We can now proceed with the roadmap:
 *   **Task 2: Conversational Chat UI**
     *   Create `<ChatWindow />` component.
     *   Hook chat input to `/api/decompose`.
