@@ -23,6 +23,24 @@ This project aims to create an AI-powered application to help users decompose fr
 
 The MVP is complete. Users can now input a goal into a chat interface and receive a list of decomposed, actionable weekly tasks from the AI.
 
+## MVP Testing Problem
+
+During testing of the MVP, a persistent server-side error (HTTP 500) occurs when the `/api/decompose` endpoint is called. The error log consistently shows a `TypeError` related to the `@google/genai` SDK, specifically `googleGenAI.GoogleGenerativeAI is not a constructor` (or variations depending on the import method tried).
+
+**Details:**
+*   **Location:** The error originates in `app/api/decompose/route.ts` when attempting to instantiate `GoogleGenerativeAI`.
+*   **Symptom:** The API returns a 500 error to the client, and the server log shows the `TypeError`.
+*   **Attempts to Resolve:**
+    *   Verified `GOOGLE_API_KEY` is correctly set in `.env.local` and the server is restarted.
+    *   Tried different JavaScript import methods for the `@google/genai` SDK within the API route:
+        *   Named imports (`import { GoogleGenerativeAI } from '@google/genai';`)
+        *   Namespace imports (`import * as googleGenAI from '@google/genai';`)
+        *   CommonJS require (`const googleGenAI = require('@google/genai');`)
+    *   None of these import methods have resolved the `TypeError`.
+*   **Suspected Cause:** The issue likely stems from an incompatibility or a subtle problem with how Next.js (specifically, its Webpack configuration for server-side API routes) handles the module structure or bundling of the `@google/genai` SDK. The SDK might be exporting modules in a way that isn't fully compatible with the Next.js App Router's API route execution environment, leading to the constructor not being recognized correctly at runtime on the server.
+
+Further investigation is needed to resolve this module resolution/bundling issue with the `@google/genai` SDK within the Next.js API route environment.
+
 ## Future Enhancements & Next Steps
 
 The core functionality of goal decomposition is in place. Future efforts can focus on improving the user experience and expanding features:
